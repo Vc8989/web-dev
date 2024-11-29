@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meal Categories and Ingredients</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      padding: 0;
+    }
+    #category-container, #ingredient-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+    .card h3 {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+    select {
+      margin: 10px 0;
+      padding: 5px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Meal Viewer</h1>
+  <button id="load-categories">Load Categories</button>
+  <div id="category-container"></div>
+
+  <h2>Select Ingredient to Load Meals</h2>
+  <select id="ingredient-select">
+    <option value="">-- Select an Ingredient --</option>
+  </select>
+  <div id="ingredient-container"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
